@@ -212,4 +212,5 @@ window.onload = function () {
     }
     localStorage.setItem("visitorCount", visitorCount);
     let visitorInfo = document.getElementById("visitorInfo");
+    visitorInfo.textContent = " You have visited this page " + visitorCount + " times.";
 };
