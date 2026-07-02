@@ -204,4 +204,12 @@ window.onload = function () {
 
     };
 
+    let visitorCount = localStorage.getItem("visitorCount") || 0;
+    if (visitorCount === null) {
+        visitorCount = 1;
+    }else {
+        visitorCount = parseInt(visitorCount) + 1;
+    }
+    localStorage.setItem("visitorCount", visitorCount);
+    let visitorInfo = document.getElementById("visitorInfo");
 };
